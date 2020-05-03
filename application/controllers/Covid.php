@@ -9,21 +9,19 @@ class Covid extends CI_Controller {
     }
 
     function index(){
-        $dunia = $this->covid->get_dunia();
         $indonesia = $this->covid->get_indonesia();
+        $global = $this->covid->get_global();
         $provinsi = $this->covid->get_provinsi();
-        $positif = $this->covid->get_positif();
-        $sembuh = $this->covid->get_sembuh();
-        $meninggal = $this->covid->get_meninggal();
+        $countries = $this->covid->get_countries();
 
-        $data['positif'] = $positif;
-        $data['sembuh'] = $sembuh;
-        $data['meninggal'] = $meninggal;
+        
         $data['indonesia'] = $indonesia;
-        $data['provinsi'] = $provinsi;
-        $data['countries'] = $dunia;
+        $data['global'] = $global;
+        $fetchprovinsi = $provinsi['data'];
+        $data['provinsi'] = $fetchprovinsi;
+        $data['countries'] = $countries;
 
-        $this->load->view('vhome', $data);
+       $this->load->view('vhome', $data);
 	}
 	
 	function covidMap() {

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="<?= base_url() ?>assets/assets/css/style.css" rel="stylesheet">
     <link href="<?= base_url() ?>assets/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="<?= base_url() ?>assets/assets/img/coronation.png" rel="icon">
+    <link href="<?= base_url() ?>assets/assets/img/coronation.png rel="apple-touch-icon">
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
     <title>Maps</title>
     <style>

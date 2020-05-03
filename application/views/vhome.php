@@ -11,7 +11,7 @@
 
     <!-- Favicons -->
     <link href="<?= base_url() ?>assets/assets/img/coronation.png" rel="icon">
-    <link href="<?= base_url() ?>assets/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<?= base_url() ?>assets/assets/img/coronation.png rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -103,18 +103,19 @@
 
                 <div class="row about-container">
 
+                  
 
                     <div class="col-lg-5 offset-lg-1 content order-lg-1 order-2">
                         <h1>INDONESIA</h1>
                         <br><br>
 
                         <div class="ml-5">
-                            <?php foreach($indonesia as $i) : ?>
+                            
                             <div class="icon-box wow fadeInUp">
                                 <div class="icon"><i class="fas fa-viruses"></i></div>
                                 <h4 class="title"><a href="">Confirmed</a></h4>
                                 <p class="description"><span class="counters h1"
-                                        data-toggle="counter-up"><?= $i['positif'] ?></span>
+                                        data-toggle="counter-up"><?= $indonesia['confirmed']['value'] ?></span>
                                 </p>
                             </div>
 
@@ -122,21 +123,21 @@
                                 <div class="icon"><i class="fas fa-heart"></i></div>
                                 <h4 class="title"><a href="">Recovered</a></h4>
                                 <p class="description"><span class="counters h1"
-                                        data-toggle="counter-up"><?= $i['sembuh'] ?></span></p>
+                                        data-toggle="counter-up"><?= $indonesia['recovered']['value'] ?></span></p>
                             </div>
 
                             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="icon"><i class="fas fa-procedures"></i></div>
                                 <h4 class="title"><a href="">Deaths</a></h4>
                                 <p class="description"><span class="counters h1"
-                                        data-toggle="counter-up"><?= $i['meninggal'] ?></span>
+                                        data-toggle="counter-up"><?= $indonesia['deaths']['value'] ?></span>
                                 </p>
                             </div>
 
-                            <?php endforeach; ?>
+                            
 
                         </div>
-
+                        
                     </div>
 
                     <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
@@ -159,14 +160,14 @@
                                 <div class="icon"><i class="fas fa-viruses"></i></div>
                                 <h4 class="title"><a href="">Confirmed</a></h4>
                                 <p class="description"><span class="counters h1"
-                                        data-toggle="counter-up"><?= $positif['value'] ?></span></p>
+                                        data-toggle="counter-up"><?= $global['confirmed']['value'] ?></span></p>
                             </div>
 
                             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="icon"><i class="fas fa-heart"></i></div>
                                 <h4 class="title"><a href="">Recovered</a></h4>
                                 <p class="description"><span class="counters h1"
-                                        data-toggle="counter-up"><?= $sembuh['value'] ?></span>
+                                        data-toggle="counter-up"><?= $global['recovered']['value'] ?></span>
                                 </p>
                             </div>
 
@@ -174,7 +175,7 @@
                                 <div class="icon"><i class="fas fa-procedures"></i></div>
                                 <h4 class="title"><a href="">Deaths</a></h4>
                                 <p class="description"><span class="counters h1"
-                                        data-toggle="counter-up"><?= $meninggal['value'] ?></span></p>
+                                        data-toggle="counter-up"><?= $global['deaths']['value'] ?></span></p>
                             </div>
 
                         </div>
@@ -183,8 +184,9 @@
 
 
                 </div>
-
-
+                
+               
+                <img src="https://covid19.mathdro.id/api/og" class="img-fluid mt-5">
             </div>
         </section><!-- End About Section -->
 
@@ -218,11 +220,11 @@
                             <tbody>
                                 <?php foreach($provinsi as $p) : ?>
                                 <tr>
-                                    <td><?= $p['attributes']['Kode_Provi'] ?></td>
-                                    <td><?= $p['attributes']['Provinsi'] ?></td>
-                                    <td><?= $p['attributes']['Kasus_Posi'] ?></td>
-                                    <td><?= $p['attributes']['Kasus_Meni'] ?></td>
-                                    <td><?= $p['attributes']['Kasus_Semb'] ?></td>
+                                    <td><?= $p['kodeProvi'] ?></td>
+                                    <td><?= $p['provinsi'] ?></td>
+                                    <td><?= $p['kasusPosi'] ?></td>
+                                    <td><?= $p['kasusMeni'] ?></td>
+                                    <td><?= $p['kasusSemb'] ?></td>
                                 </tr>
                                 <?php endforeach; ?>
                             </tbody>
@@ -364,8 +366,8 @@
                         <img src="<?= base_url() ?>assets/assets/img/coronation.png" width=250 class="img-fluid" alt="">
                         <b>
                             <p class="mt-2">
-                                <a href="mailto:coronation-cwi@gmail.com"
-                                    class="text-white">coronation-cwi@gmail.com</a>
+                                <a href="mailto:coronationcwi@gmail.com"
+                                    class="text-white">coronationcwi@gmail.com</a>
                             </p>
                         </b>
                     </div>
