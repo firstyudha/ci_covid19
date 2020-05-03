@@ -118,7 +118,7 @@
             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon"><i class="fas fa-procedures"></i></div>
               <h4 class="title"><a href="">Deaths</a></h4>
-              <p class="description"><span class="counters h1" data-toggle="counter-up"><?= $i['meninggal'] ?>1</span></p>
+              <p class="description"><span class="counters h1" data-toggle="counter-up"><?= $i['meninggal'] ?></span></p>
             </div>
 
             <?php endforeach; ?>
@@ -175,14 +175,21 @@
     <!-- ======= Services Section ======= -->
     <section id="services" class="section-bg">
       <div class="container">
+          
+        <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <header class="section-header">
+                  <h3>Indonesia Data</h3>
+                </header>
+              </div>
+        </div>
 
-        <header class="section-header">
-          <h3>Indonesia Data</h3>
-        </header>
+        <div class="row mt-5">
+        <div class="col-md-10 offset-md-1">
 
      
         
-        <table class="table table-hovered" id="tabel-data">
+        <table class="table table-responsive" id="tabel-data">
                 <thead>
                     <tr>
                         <th>Kode Provinsi</th>
@@ -204,8 +211,8 @@
                 <?php endforeach; ?>
                 </tbody>
         </table>
-    
-
+            </div>
+        </div>
       </div>
     </section>
     <!-- End Services Section -->
@@ -213,19 +220,27 @@
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="wow fadeIn">
       <div class="container text-white">
-        <header class="section-header">
-          <h3>Countries Data</h3>
-        </header>
+        <div class="row">
+                <div class="col-md-8 offset-md-2">
+                  <header class="section-header">
+                    <h3>Countries Data</h3>
+                  </header>
+                </div>
+          </div>
+
+          <div class="row mt-5">
+          <div class="col-md-10 offset-md-1">
 
         
 
-        <table class="table table-hovered text-white" id="tabel-data1">
+        <table class="table table-responsive text-white" id="tabel-data1">
                 <thead>
                     <tr>
                         <th>Region</th>
                         <th>Confirmed</th>
                         <th>Recovered</th>
                         <th>Deaths</th>
+                        <th>Active</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -235,11 +250,13 @@
                         <td><?= $c['attributes']['Confirmed'] ?></td>
                         <td><?= $c['attributes']['Recovered'] ?></td>
                         <td><?= $c['attributes']['Deaths'] ?></td>
+                        <td><?= $c['attributes']['Active'] ?></td>
                     </tr>
                 <?php endforeach; ?>
                 </tbody>
         </table>
-
+          </div>
+          </div>
       </div>
     </section><!-- End Why Us Section -->
 
@@ -327,6 +344,11 @@
           <div class="col-lg-4 col-md-6 footer-info">
             <h3>Created by coronation</h3>
             <img src="<?= base_url() ?>assets/assets/img/coronation.png" width=250 class="img-fluid" alt="">
+            <b>
+            <p class="mt-2">
+              <a href="mailto:coronation-cwi@gmail.com" class="text-white">coronation-cwi@gmail.com</a>
+            </p>
+            </b>
           </div>
 
 
