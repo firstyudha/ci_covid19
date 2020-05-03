@@ -24,8 +24,11 @@ class Covid extends CI_Controller {
         $data['countries'] = $dunia;
 
         $this->load->view('vhome', $data);
-    }
-
+	}
+	
+	function covidMap() {
+		$this->load->view('vmap');
+	}
 
 }
 
