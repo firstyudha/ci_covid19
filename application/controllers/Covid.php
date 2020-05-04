@@ -30,7 +30,11 @@ class Covid extends CI_Controller {
     
     function jabar(){
         $this->load->view('vjabar');
-    }
+	}
+	
+	function mapJabar() {
+		$this->load->view('vmap_jabar');
+	}
 
 }
 
