@@ -68,7 +68,8 @@
                     <li><a href="#services">Indonesia</a></li>
                     <li><a href="#why-us">Global</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="<?= base_url('Covid/covidMap') ?>">Maps</a></li>
+                    <li><a href="<?= base_url('Covid/jabar') ?>">Jabar <span class="badge badge-secondary">New</span></a></li>
+                    <li><a href="<?= base_url('Covid/covidMap') ?>" target="_blank">Global Maps</a></li>
                 </ul>
             </nav><!-- .main-nav -->
 
@@ -85,7 +86,7 @@
             </div>
 
             <div class="intro-info">
-                <h2>We inform<br><span>real-time data</span><br>of Covid-19</h2>
+                <h2>We inform<br><span>live-time data</span><br>of Covid-19</h2>
                 <div>
                     <a href="#services" class="btn-get-started scrollto">Indonesia</a>
                     <a href="#why-us" class="btn-services scrollto">Global</a>

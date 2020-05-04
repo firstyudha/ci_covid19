@@ -9,16 +9,20 @@ class Covid_model extends CI_Model{
     private $_clientidkl;
 
 	function __construct(){
-		parent:: __construct();
+        parent:: __construct();
+        
 		$this->_client = new Client([
             'base_uri' => 'https://covid19.mathdro.id/api/'
         ]);
-    $this->_clientid = new Client([
+
+        $this->_clientid = new Client([
             'base_uri' => 'https://indonesia-covid-19-api.now.sh/api/'
         ]);
-    $this->_clientidkl = new Client([
+
+        $this->_clientidkl = new Client([
           'base_uri' => 'https://api.kawalcorona.com/'
-    ]);
+        ]);
+        
     }
 
     

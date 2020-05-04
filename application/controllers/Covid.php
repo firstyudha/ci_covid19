@@ -26,7 +26,11 @@ class Covid extends CI_Controller {
 	
 	function covidMap() {
 		$this->load->view('vmap');
-	}
+    }
+    
+    function jabar(){
+        $this->load->view('vjabar');
+    }
 
 }
 
