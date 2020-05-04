@@ -7,11 +7,12 @@ class Covid_model extends CI_Model{
     private $_client;
     private $_clientid;
     private $_clientidkl;
+    private $_clientpikobar;
 
 	function __construct(){
         parent:: __construct();
-        
-		$this->_client = new Client([
+        set_time_limit(0);
+		    $this->_client = new Client([
             'base_uri' => 'https://covid19.mathdro.id/api/'
         ]);
 
@@ -21,6 +22,10 @@ class Covid_model extends CI_Model{
 
         $this->_clientidkl = new Client([
           'base_uri' => 'https://api.kawalcorona.com/'
+        ]);
+
+        $this->_clientpikobar = new Client([
+          'base_uri' => 'https://covid19-public.digitalservice.id/api/v1/'
         ]);
         
     }
@@ -57,6 +62,20 @@ class Covid_model extends CI_Model{
        return $result = json_decode($response->getBody()->getContents(), true);
         return $result;
     }
+
+    function get_rekapitulasijabar(){
+    $response = $this->_clientpikobar->request('GET','rekapitulasi/jabar');
+
+        return $result = json_decode($response->getBody()->getContents(), true);
+        return $result;
+    }
+
+      function get_sebaranjabar(){
+      $response = $this->_clientpikobar->request('GET','sebaran/jabar');
+  
+          return $result = json_decode($response->getBody()->getContents(), true);
+          return $result;
+      }
 
 }
 
