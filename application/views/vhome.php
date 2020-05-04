@@ -223,8 +223,8 @@
                                     <td><?= $p['kodeProvi'] ?></td>
                                     <td><?= $p['provinsi'] ?></td>
                                     <td><?= $p['kasusPosi'] ?></td>
-                                    <td><?= $p['kasusMeni'] ?></td>
                                     <td><?= $p['kasusSemb'] ?></td>
+                                    <td><?= $p['kasusMeni'] ?></td>
                                 </tr>
                                 <?php endforeach; ?>
                             </tbody>
