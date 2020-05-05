@@ -67,9 +67,11 @@
                     <li><a href="<?= base_url('Covid/jabar') ?>">Jabar <span
                                 class="badge badge-secondary">New</span></a></li>
                     <li><a href="<?= base_url('Covid/sebaran') ?>" target="_blank">Data Sebaran <span
-                                class="badge badge-danger">3-5 menit untuk load data</span></a></li>
+                                class="badge badge-danger">3-5 menit untuk load data</span> <span
+                                class="badge badge-primary">31000++ data</span></a></li>
                     <li><a href="<?= base_url('Covid/jabarMap') ?>" target="_blank">Jabar Map <span
-                                class="badge badge-secondary">New</span></a></li>
+                                class="badge badge-secondary">New </span> <span
+                                class="badge badge-primary">beta</span></a></li>
                 </ul>
             </nav><!-- .main-nav -->
 
@@ -98,53 +100,10 @@
 
         <!-- ======= About Section ======= -->
         <section id="about">
-            <div class="container text-white">
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quia, et maxime accusamus
-                praesentium odit placeat doloremque rerum a eos. Rem fugit inventore est, consequuntur molestias illo
-                quibusdam voluptas. Voluptatum provident labore debitis eos inventore, dolorum et soluta voluptas magni
-                rem architecto est numquam vero doloribus suscipit neque aspernatur in id unde dicta iure? Laborum
-                recusandae non explicabo fugit labore officia, vel praesentium facilis aspernatur suscipit in ut
-                accusamus pariatur nam saepe ad enim quas quibusdam ratione. In, aspernatur. Maiores quisquam suscipit
-                eaque. Inventore voluptate sequi cumque repudiandae labore, eligendi quaerat similique iure? Mollitia
-                iste esse illum doloribus ullam culpa veniam praesentium ad dignissimos nam minima quibusdam ea nostrum
-                placeat, quasi, tempora voluptatum tenetur possimus at repellendus cumque delectus! Officiis atque
-                eveniet nulla repellat illum incidunt, aliquam explicabo libero alias fuga corporis autem laudantium
-                quisquam in ea? Natus accusantium libero hic impedit distinctio ut dolores consequuntur quasi aspernatur
-                aliquid, aperiam nemo est recusandae, rerum harum nam tempore ducimus laboriosam inventore error eveniet
-                ratione saepe itaque! Nemo quas quibusdam nulla, beatae doloremque itaque voluptatibus odit. Veritatis
-                voluptatibus, atque optio quaerat obcaecati explicabo neque cum ipsum officiis nisi soluta. Facilis,
-                accusamus unde aliquam, sint eaque cumque, aperiam aut quidem reprehenderit deleniti fugiat mollitia
-                inventore! Quidem sunt nihil pariatur. Assumenda similique ipsam sint vitae iusto sunt nesciunt vel
-                voluptates! Voluptates soluta temporibus at eveniet mollitia beatae a? Quos reprehenderit quas odit
-                labore inventore nisi quam! Sit dolorum doloremque id sapiente voluptatem nobis neque, dicta enim
-                mollitia, maxime ratione deserunt sed. Id cum vel nulla fugit in iure incidunt eius blanditiis totam
-                repellendus hic deserunt ipsum recusandae voluptate deleniti a repellat culpa ipsam harum aspernatur,
-                quam sapiente dolores. Provident in qui fuga accusantium illum id sit, sed magni cumque, labore
-                repudiandae ducimus repellat similique voluptatibus minus maxime quae eius reiciendis nisi a soluta
-                totam, amet voluptas autem. Numquam molestiae tempora accusamus, sed assumenda quaerat iste a facilis
-                obcaecati consequuntur repudiandae modi, officia ducimus, ad molestias provident itaque neque corrupti
-                vero ipsam voluptas quia pariatur alias qui! Nisi ipsa itaque reprehenderit quae non earum tempore
-                pariatur animi voluptatum, quas suscipit obcaecati sapiente natus, optio fugiat quisquam laborum officia
-                impedit eaque. Deserunt saepe odio, est repudiandae, laboriosam pariatur repellat molestias commodi
-                delectus, quibusdam nobis minima? Atque nihil deserunt autem voluptatum corporis ea omnis saepe
-                laboriosam incidunt quasi minus nostrum ad consequuntur exercitationem fugiat quae, tenetur repellendus
-                eius sit est mollitia perspiciatis! Distinctio quia veritatis nemo labore dolore voluptate, consequatur
-                obcaecati quod illum, harum molestiae voluptatem voluptas minima ab praesentium amet molestias a,
-                tenetur atque repellat veniam dicta quasi voluptatibus corporis? Accusantium magnam debitis vitae fuga
-                aperiam, neque expedita doloribus enim autem nobis quas minus ex saepe. Molestias ea delectus excepturi
-                voluptatum magni rem consectetur. Consequuntur ratione hic qui suscipit labore ex alias, soluta aperiam
-                ut tenetur, delectus totam iusto, magnam reprehenderit facere vero animi nihil sit sint quis aliquam
-                natus molestias eaque? Dolorum corrupti molestias dolore omnis ducimus officia dolores soluta odio natus
-                nihil itaque, blanditiis nam? Impedit sed, molestiae error voluptatem aliquam adipisci nesciunt odio?
-
-
-
+            <div class="container">
+                <div class="display-4 mt-5 mb-5">Sorry... This Page is under maintenance.</div>
             </div>
         </section><!-- End About Section -->
-
-
-
 
 
     </main><!-- End #main -->

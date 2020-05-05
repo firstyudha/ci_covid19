@@ -69,7 +69,7 @@
                     <li><a href="#why-us">Global</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="<?= base_url('Covid/jabar') ?>">Jabar <span class="badge badge-secondary">New</span></a></li>
-                    <li><a href="<?= base_url('Covid/covidMap') ?>" target="_blank">Global Maps</a></li>
+                    <li><a href="<?= base_url('Covid/covidMap') ?>" target="_blank">Global Maps <span class="badge badge-success">Updated</span></a></li>
                 </ul>
             </nav><!-- .main-nav -->
 

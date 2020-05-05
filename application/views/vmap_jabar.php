@@ -41,7 +41,7 @@
             <nav class="main-nav float-right d-none d-lg-block">
                 <ul>
                     <li><a href="<?= base_url('Covid') ?>">Home</a></li>
-                    <li class="active"><a href="<?= base_url('Covid/covidMap') ?>">Maps</a></li>
+                    <li class="active"><a href="<?= base_url('Covid/jabarMap') ?>">Jabar Map</a></li>
                 </ul>
             </nav><!-- .main-nav -->
         </div>
@@ -51,6 +51,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
     <script src='<?= base_url('assets/js/leaflet.js') ?>'></script>
     <script src="<?= base_url('assets/js/map_jabar.js') ?>"></script>
+    
 </body>
 
 </html>

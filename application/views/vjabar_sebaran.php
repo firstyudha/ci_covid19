@@ -65,7 +65,9 @@
                 <ul>
                     <li><a href="<?= base_url('Covid') ?>" class="active">Home</a></li>
                     <li><a href="<?= base_url('Covid/jabar') ?>" target="_blank">Jabar <span class="badge badge-secondary">New</span></a></li>
-                    <li><a href="#" >Jabar Map <span class="badge badge-secondary">New</span></a></li>
+                    <li><a href="<?= base_url('Covid/jabarMap') ?>" target="_blank">Jabar Map <span
+                                class="badge badge-secondary">New </span> <span
+                                class="badge badge-primary">beta</span></a></li>
                 </ul>
             </nav><!-- .main-nav -->
 
