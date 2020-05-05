@@ -101,9 +101,213 @@
         <!-- ======= About Section ======= -->
         <section id="about">
             <div class="container">
-                <div class="display-4 mt-5 mb-5">Sorry... This Page is under maintenance.</div>
+
+                <div class="row ">
+                    <div class="col-md-4">
+                        <div class="icon-box wow fadeInUp centered">
+                            <center>
+                            <h4 class="title text-secondary">Positif</h4>
+                            <i class="far fa-frown fa-7x text-danger"></i> 
+                            <p class="description">
+                                <span class="counters h1" data-toggle="counter-up">
+                                <?= $positif ?>
+                                </span>
+                            </p>
+                                <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Laki-laki <?= $positifL ?> Perempuan <?= $positifP ?>">
+                                lihat detail
+                                </button>
+                            </center>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box wow fadeInUp centered">
+                            <center>
+                            <h4 class="title text-secondary">Meninggal</h4>
+                            <i class="fas fa-bed fa-7x"></i> 
+                            <p class="description">
+                                <span class="counters h1" data-toggle="counter-up">
+                                <?= $meninggal ?>
+                                </span>
+                            </p>
+                                <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Laki-laki <?= $meninggalL ?> Perempuan <?= $meninggalP ?>">
+                                lihat detail
+                                </button>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box wow fadeInUp centered">
+                            <center>
+                            <h4 class="title text-secondary">Sembuh</h4>
+                            <i class="far fa-smile-wink fa-7x text-primary"></i> 
+                            <p class="description">
+                                <span class="counters h1" data-toggle="counter-up">
+                                <?= $sembuh ?>
+                                </span>
+                            </p>
+                            <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Laki-laki <?= $sembuhL ?> Perempuan <?= $sembuhP ?>">
+                                lihat detail
+                            </button>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section><!-- End About Section -->
+
+        <!-- ======= proses Section ======= -->
+        <section id="proses" class="bg-primary">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6 mt-5 mb-5">
+                        <div class="icon-box wow fadeInUp centered">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                                <i class="fas fa-head-side-cough fa-5x mb-4 text-warning"></i>
+                                                <h4 class="title text-secondary">( ODP )</h4>
+                                                <h3 class="description">
+                                                    Orang Dalam Pemantauan
+                                                </h3>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-warning w-100" data-toggle="modal" data-target="#exampleModalCenter">
+  Lihat Detail
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="exampleModalLongTitle">Orang Dalam Pantauan per Jenis Kelamin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col">
+                <i class="fas fa-male fa-5x"></i>
+                <span class="counters h1" data-toggle="counter-up">
+                    <?= $odpgenderL ?>
+                </span>
+            </div>
+            <div class="col">
+                <i class="fas fa-female fa-5x"></i>
+                <span class="h1">
+                    <?= $odpgenderP ?>
+                </span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                                        </div>
+                                        <div class="col">
+                                        <h4 class="text-primary">Proses Pemantauan</h4>
+                                        <p class="description">
+                                            <span class="counters h3" data-toggle="counter-up">
+                                            <?= $odpProses ?>
+                                            </span>
+                                        </p>
+                                        <h4 class="text-success">Selesai Pemantauan</h4>
+                                        <p class="description">
+                                            <span class="counters h3" data-toggle="counter-up">
+                                            <?= $odpSelesai ?>
+                                            </span>
+                                        </p>
+                                        <h4 class="text-danger">Total</h4>
+                                        <p class="description">
+                                            <span class="counters h3" data-toggle="counter-up">
+                                            <?= $odpTotal ?>
+                                            </span>
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5 mb-5">
+                        <div class="icon-box wow fadeInUp centered">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                                <i class="fas fa-head-side-mask fa-5x mb-4 text-danger"></i>
+                                                <h4 class="title text-secondary">( PDP )</h4>
+                                                <h3 class="description">
+                                                    Pasien Dalam Pengawasan
+                                                </h3>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-danger w-100" data-toggle="modal" data-target="#exampleModalCenter1">
+  Lihat Detail
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="exampleModalLongTitle">Pasiem Dalam Pengawasan per Jenis Kelamin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col">
+                <i class="fas fa-male fa-5x"></i>
+                <span class="counters h1" data-toggle="counter-up">
+                    <?= $pdpgenderL ?>
+                </span>
+            </div>
+            <div class="col">
+                <i class="fas fa-female fa-5x"></i>
+                <span class="h1">
+                <?= $pdpgenderP ?>
+                </span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                                        </div>
+                                        <div class="col">
+                                        <h4 class="text-primary">Proses Pengawasan</h4>
+                                        <p class="description">
+                                            <span class="counters h3" data-toggle="counter-up">
+                                            <?= $pdpProses ?>
+                                            </span>
+                                        </p>
+                                        <h4 class="text-success">Selesai Pengawasan</h4>
+                                        <p class="description">
+                                            <span class="counters h3" data-toggle="counter-up">
+                                            <?= $pdpSelesai ?>
+                                            </span>
+                                        </p>
+                                        <h4 class="text-danger">Total</h4>
+                                        <p class="description">
+                                            <span class="counters h3" data-toggle="counter-up">
+                                            <?= $pdpTotal ?>
+                                            </span>
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section><!-- End proses Section -->
 
 
     </main><!-- End #main -->
@@ -119,9 +323,26 @@
                         <img src="<?= base_url() ?>assets/assets/img/coronation.png" width=250 class="img-fluid" alt="">
                         <b>
                             <p class="mt-2">
-                                <a href="mailto:coronationcwi@gmail.com" class="text-white">coronationcwi@gmail.com</a>
+                                <a href="mailto:coronationcwi@gmail.com"
+                                    class="text-white">coronationcwi@gmail.com</a>
                             </p>
                         </b>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <div class="mt-5"></div>
+                        <br>
+                        <h3 class="mt-5">Data Source</h3>
+                        <ul>
+                            <li><a href="https://kawalcorona.com/api/"><h4>Kawal Corona API</h4></a></li>
+                            <li><a href="https://covid19-public.digitalservice.id/api/v1/"><h4>API publik PIKOBAR</h4></a></li>
+                            <li><a href="https://github.com/mathdroid/indonesia-covid-19-api"><h4>Mathroid Indonesia Covid-19 API</h4></a></li>
+                            <li><a href="https://github.com/mathdroid/covid-19-api"><h4>Mathroid Covid-19 API</h4></a></li>
+                        </ul>
                     </div>
 
 
@@ -159,7 +380,11 @@
     <script src="<?= base_url() ?>assets/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="<?= base_url() ?>assets/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="<?= base_url() ?>assets/assets/vendor/venobox/venobox.min.js"></script>
-
+            <script>
+                $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+            </script>
     <!-- Template Main JS File -->
     <script src="<?= base_url() ?>assets/assets/js/main.js"></script>
 

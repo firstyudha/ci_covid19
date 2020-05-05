@@ -104,8 +104,6 @@
 
                 <div class="row about-container">
 
-                  
-
                     <div class="col-lg-5 offset-lg-1 content order-lg-1 order-2">
                         <h1>INDONESIA</h1>
                         <br><br>
@@ -144,6 +142,7 @@
                     <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
                         <img src="<?= base_url() ?>assets/assets/img/indonesia.png" class="img-fluid" alt="">
                     </div>
+
                 </div>
 
                 <div class="row about-container mt-5">
@@ -371,6 +370,22 @@
                                     class="text-white">coronationcwi@gmail.com</a>
                             </p>
                         </b>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <div class="mt-5"></div>
+                        <br>
+                        <h3 class="mt-5">Data Source</h3>
+                        <ul>
+                            <li><a href="https://kawalcorona.com/api/"><h4>Kawal Corona API</h4></a></li>
+                            <li><a href="https://covid19-public.digitalservice.id/api/v1/"><h4>API publik PIKOBAR</h4></a></li>
+                            <li><a href="https://github.com/mathdroid/indonesia-covid-19-api"><h4>Mathroid Indonesia Covid-19 API</h4></a></li>
+                            <li><a href="https://github.com/mathdroid/covid-19-api"><h4>Mathroid Covid-19 API</h4></a></li>
+                        </ul>
                     </div>
 
 

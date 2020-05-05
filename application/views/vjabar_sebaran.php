@@ -160,6 +160,22 @@
                         </b>
                     </div>
 
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <div class="mt-5"></div>
+                        <br>
+                        <h3 class="mt-5">Data Source</h3>
+                        <ul>
+                            <li><a href="https://kawalcorona.com/api/"><h4>Kawal Corona API</h4></a></li>
+                            <li><a href="https://covid19-public.digitalservice.id/api/v1/"><h4>API publik PIKOBAR</h4></a></li>
+                            <li><a href="https://github.com/mathdroid/indonesia-covid-19-api"><h4>Mathroid Indonesia Covid-19 API</h4></a></li>
+                            <li><a href="https://github.com/mathdroid/covid-19-api"><h4>Mathroid Covid-19 API</h4></a></li>
+                        </ul>
+                    </div>
+
 
                 </div>
             </div>
