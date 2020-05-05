@@ -29,7 +29,7 @@ class Covid extends CI_Controller {
     }
     
     function jabar(){
-
+		
         $rekapitulasijabar = $this->covid->get_rekapitulasijabar();
 
         //positif,sembuh,meninggal
@@ -112,7 +112,11 @@ class Covid extends CI_Controller {
         $data['sebaran'] = $fetchcontent;
 
         $this->load->view('vjabar_sebaran',$data);
-    }
+	}
+	
+	function jabarMap() {
+		$this->load->view('vmap_jabar');
+	}
 
 }
 
