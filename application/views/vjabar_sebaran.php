@@ -1,12 +1,3 @@
-<?php
-    $data = file_get_contents('assets/json/map.json');
-    $data = utf8_encode($data);
-    $sebaranjabar = json_decode($data,true);
-
-    $updated = $sebaranjabar['data']['metadata']['last_update'];
-    $sebaran = $sebaranjabar['data']['content'];
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
