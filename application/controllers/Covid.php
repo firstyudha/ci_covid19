@@ -108,14 +108,14 @@ class Covid extends CI_Controller {
     }
 
     function sebaran(){
-        $sebaranjabar = $this->covid->get_sebaranjabar();
+        // $sebaranjabar = $this->covid->get_sebaranjabar();
 
-        $fetchlastupdate = $sebaranjabar['data']['metadata']['last_update'];
-        $fetchcontent = $sebaranjabar['data']['content'];
-        $data['updated'] = $fetchlastupdate;
-        $data['sebaran'] = $fetchcontent;
+        // $fetchlastupdate = $sebaranjabar['data']['metadata']['last_update'];
+        // $fetchcontent = $sebaranjabar['data']['content'];
+        // $data['updated'] = $fetchlastupdate;
+        // $data['sebaran'] = $fetchcontent;
 
-        $this->load->view('vjabar_sebaran',$data);
+        $this->load->view('vjabar_sebaran');
 	}
 	
 	function jabarMap() {
