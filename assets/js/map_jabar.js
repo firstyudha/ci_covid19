@@ -1,41 +1,48 @@
-// axios.get("https://covid19-public.digitalservice.id/api/v1/sebaran/jabar")
-// 	.then(res => {
-// 		const main = res.data
-// 		const {
-// 			content
-// 		} = main.data
-
-// 		for (const item of content) {
-// 			const {
-// 				latitude,
-// 				longitude,
-// 				status,
-// 				umur
-// 			} = item
-
-// 			var geojsonFeature = {
-// 				"type": "Feature",
-// 				"properties": {
-// 					"name": "Coors Field",
-// 					"amenity": "Baseball Stadium",
-// 					"popupContent": "This is where the Rockies play!"
-// 				},
-// 				"geometry": {
-// 					"type": "Point",
-// 					"coordinates": [-6.914744, 107.609810]
-// 				}
-// 			}
-// 			L.geoJSON(geojsonFeature).addTo(map);
-// 		}
-// 	});
-
 //inisialisasi mapnya
-var map = L.map('map').setView([-6.914744, 107.609810], 7);
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-	maxZoom: 18,
-	id: 'mapbox/streets-v11',
-	tileSize: 512,
-	zoomOffset: -1,
-	accessToken: 'pk.eyJ1IjoicmF5aGFuYXppejc3IiwiYSI6ImNrOXF1d3NsNjBtOHAzc3J0ZG53YzRuOW0ifQ.23E5E6AJ8azTrdW4nbfcEQ'
-}).addTo(map);
+var map = L.map("map").setView([-6.914744, 107.60981], 12);
+L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
+
+//        untuk url ini diganti sesuai hostingan /assets/json/map.json (http://localhost/ci_covid19/assets/json/map.json) 
+axios.get("https://covid19-public.digitalservice.id/api/v1/sebaran/jabar").then((res) => {
+	const main = res.data;
+	const {
+		content
+	} = main.data;
+	var myRenderer = L.canvas({
+		padding: 1,
+	});
+	content.forEach((element) => {
+		const {
+			latitude,
+			longitude,
+			status,
+			umur
+		} = element;
+		let color = "";
+		switch (status) {
+			case "ODP":
+				color = "yellow";
+				break;
+			case "PDP":
+				color = "orange";
+				break;
+			case "OTG":
+				color = "red";
+				break;
+			case "Positif":
+				color = "brown";
+				break;
+		}
+		L.circleMarker([latitude, longitude], {
+				renderer: myRenderer,
+				radius: 8,
+				fillColor: color,
+				color: "black",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8,
+			})
+			.bindPopup(status)
+			.addTo(map);
+	});
+});
