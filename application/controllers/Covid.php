@@ -122,6 +122,16 @@ class Covid extends CI_Controller {
 		$this->load->view('vmap_jabar');
 	}
 
+	function ajaxSebaran() {
+		$sebaranjabar = $this->covid->get_sebaranjabar();
+
+        $fetchlastupdate = $sebaranjabar['data']['metadata']['last_update'];
+        $fetchcontent = $sebaranjabar['data']['content'];
+        $data['updated'] = $fetchlastupdate;
+		$data['sebaran'] = $fetchcontent;
+		
+		return $data;
+	}
 }
 
 ?>
