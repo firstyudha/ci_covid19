@@ -11,7 +11,7 @@
 
     <!-- Favicons -->
     <link href="<?= base_url() ?>assets/assets/img/coronation.png" rel="icon">
-    <link href="<?= base_url() ?>assets/assets/img/coronation.png rel="apple-touch-icon">
+    <link href="<?= base_url() ?>assets/assets/img/coronation.png rel=" apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -64,7 +64,8 @@
             <nav class="main-nav float-right d-none d-lg-block">
                 <ul>
                     <li><a href="<?= base_url('Covid') ?>" class="active">Home</a></li>
-                    <li><a href="<?= base_url('Covid/jabar') ?>" target="_blank">Jabar <span class="badge badge-secondary">New</span></a></li>
+                    <li><a href="<?= base_url('Covid/jabar') ?>" target="_blank">Jabar <span
+                                class="badge badge-secondary">New</span></a></li>
                     <li><a href="<?= base_url('Covid/jabarMap') ?>" target="_blank">Jabar Map <span
                                 class="badge badge-secondary">New </span> <span
                                 class="badge badge-primary">beta</span></a></li>
@@ -82,7 +83,7 @@
                 <img src="<?= base_url() ?>assets/assets/img/coronation.png" alt=""
                     class="img-fluid rounded-circle shadow-lg" width=400>
             </div>
-            
+
 
             <div class="intro-info mt-3">
                 <img src="<?= base_url() ?>assets/assets/img/jabar.png" alt="" class="img-fluid" width=400>
@@ -94,53 +95,48 @@
 
     <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about">
-        <div class="container">
+        <!-- ======= About Section ======= -->
+        <section id="about">
+            <div class="container">
 
-            <h3>Data Sebaran Jawa Barat</h3>
-            <p>(updated : <?= $updated; ?> )</p>
-            <br>
-            <table class="table table-responsive" id="tabel-data">
-                            <thead>
-                                <tr>
-                                    <th>Kabupaten</th>
-                                    <th>Kecamatan</th>
-                                    <th>Kelurahan</th>
-                                    <th>Status</th>
-                                    <th>Stage</th>
-                                    <th>Umur</th>
-                                    <th>Jenis Kelamin</th>
-                                    <th>Tgl Konfirmasi</th>
-                                    <th>Tgl Update</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                               <?php foreach($sebaran as $s) : ?>
-                                <tr>
-                                    <td><?= $s['nama_kab'] ?></td>
-                                    <td><?= $s['nama_kec'] ?></td>
-                                    <td><?= $s['nama_kel'] ?></td>
-                                    <td><?= $s['status'] ?></td>
-                                    <td><?= $s['stage'] ?></td>
-                                    <td><?= $s['umur'] ?></td>
-                                    <td><?= $s['gender'] ?></td>
-                                    <td><?= $s['tanggal_konfirmasi'] ?></td>
-                                    <td><?= $s['tanggal_update'] ?></td>
-                                </tr>
-                               <?php endforeach; ?>
-                            </tbody>
-                        </table>
-
-            
-            
-        </div>
-    </section><!-- End About Section -->
+                <h3>Data Sebaran Jawa Barat</h3>
+                <p>(updated : <?= $updated; ?> )</p>
+                <br>
+                <table class="table table-responsive" id="tabel-data">
+                    <thead>
+                        <tr>
+                            <th>Kabupaten</th>
+                            <th>Kecamatan</th>
+                            <th>Kelurahan</th>
+                            <th>Status</th>
+                            <th>Stage</th>
+                            <th>Umur</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Tgl Konfirmasi</th>
+                            <th>Tgl Update</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach($sebaran as $s) : ?>
+                        <tr>
+                            <td><?= $s['nama_kab'] ?></td>
+                            <td><?= $s['nama_kec'] ?></td>
+                            <td><?= $s['nama_kel'] ?></td>
+                            <td><?= $s['status'] ?></td>
+                            <td><?= $s['stage'] ?></td>
+                            <td><?= $s['umur'] ?></td>
+                            <td><?= $s['gender'] ?></td>
+                            <td><?= $s['tanggal_konfirmasi'] ?></td>
+                            <td><?= $s['tanggal_update'] ?></td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
 
 
 
-
-
+            </div>
+        </section><!-- End About Section -->
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
@@ -154,14 +150,13 @@
                         <img src="<?= base_url() ?>assets/assets/img/coronation.png" width=250 class="img-fluid" alt="">
                         <b>
                             <p class="mt-2">
-                                <a href="mailto:coronationcwi@gmail.com"
-                                    class="text-white">coronationcwi@gmail.com</a>
+                                <a href="mailto:coronationcwi@gmail.com" class="text-white">coronationcwi@gmail.com</a>
                             </p>
                         </b>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-info">
-                        
+
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-info">
@@ -169,10 +164,18 @@
                         <br>
                         <h3 class="mt-5">Data Source</h3>
                         <ul>
-                            <li><a href="https://kawalcorona.com/api/"><h4>Kawal Corona API</h4></a></li>
-                            <li><a href="https://covid19-public.digitalservice.id/api/v1/"><h4>API publik PIKOBAR</h4></a></li>
-                            <li><a href="https://github.com/mathdroid/indonesia-covid-19-api"><h4>Mathroid Indonesia Covid-19 API</h4></a></li>
-                            <li><a href="https://github.com/mathdroid/covid-19-api"><h4>Mathroid Covid-19 API</h4></a></li>
+                            <li><a href="https://kawalcorona.com/api/">
+                                    <h4>Kawal Corona API</h4>
+                                </a></li>
+                            <li><a href="https://covid19-public.digitalservice.id/api/v1/">
+                                    <h4>API publik PIKOBAR</h4>
+                                </a></li>
+                            <li><a href="https://github.com/mathdroid/indonesia-covid-19-api">
+                                    <h4>Mathroid Indonesia Covid-19 API</h4>
+                                </a></li>
+                            <li><a href="https://github.com/mathdroid/covid-19-api">
+                                    <h4>Mathroid Covid-19 API</h4>
+                                </a></li>
                         </ul>
                     </div>
 
@@ -195,12 +198,12 @@
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
         </div>
-    </footer><!-- End Footer -->
+    </footer>
 
+    <!-- End Footer -->
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
     <!-- Vendor JS Files -->
-
     <script src="<?= base_url() ?>assets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="<?= base_url() ?>assets/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="<?= base_url() ?>assets/assets/vendor/php-email-form/validate.js"></script>

@@ -2,7 +2,7 @@
 var map = L.map("map").setView([-6.914744, 107.60981], 12);
 L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
 
-//        untuk url ini diganti sesuai hostingan /assets/json/map.json (http://localhost/ci_covid19/assets/json/map.json) 
+// untuk url ini diganti sesuai hostingan /assets/json/map.json (http://localhost/ci_covid19/assets/json/map.json) 
 axios.get("https://covid19-public.digitalservice.id/api/v1/sebaran/jabar").then((res) => {
 	const main = res.data;
 	const {
