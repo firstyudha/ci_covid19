@@ -31,6 +31,7 @@ class Covid extends CI_Controller {
     function jabar(){
 		
         $rekapitulasijabar = $this->covid->get_rekapitulasijabar();
+        $faskesjabar = $this->covid->get_faskesjabar();
 
         //positif,sembuh,meninggal
         $fetchpositif = $rekapitulasijabar['data']['content']['positif'];
@@ -72,6 +73,8 @@ class Covid extends CI_Controller {
         $fetchpcrpositif = $rekapitulasijabar['data']['content']['pcr']['positif'];
         $fetchpcrnegatif = $rekapitulasijabar['data']['content']['pcr']['negatif'];
 
+        //faskes
+        $fetchfaskesjabar = $faskesjabar['data'];
 
         $data = [
             'positif' => $fetchpositif,
@@ -101,7 +104,8 @@ class Covid extends CI_Controller {
             'pcrPositif' => $fetchpcrpositif,
             'pcrNegatif' => $fetchpcrnegatif,
             'pcrTanggal' => $fetchpcrtanggal,
-            'pcsJmlSampling' => $fetchpcrjumlahsampling
+            'pcsJmlSampling' => $fetchpcrjumlahsampling,
+            'faskes' => $fetchfaskesjabar
         ];
 
         $this->load->view('vjabar',$data);
@@ -123,12 +127,13 @@ class Covid extends CI_Controller {
 	}
 
 	function ajaxSebaran() {
-		$sebaranjabar = $this->covid->get_sebaranjabar();
+        $sebaranjabar = $this->covid->get_sebaranjabar();
 
         $fetchlastupdate = $sebaranjabar['data']['metadata']['last_update'];
         $fetchcontent = $sebaranjabar['data']['content'];
+
         $data['updated'] = $fetchlastupdate;
-		$data['sebaran'] = $fetchcontent;
+        $data['sebaran'] = $fetchcontent;
 		
 		return $data;
 	}

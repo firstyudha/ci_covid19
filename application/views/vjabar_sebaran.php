@@ -156,7 +156,11 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-info">
-
+                        <div class="mt-5"></div>
+                        <br>
+                        <h3 class="mt-5">Supported by</h3>
+                        <img src="<?= base_url() ?>assets/assets/img/bem.png" width=130 class="img-fluid"
+                            alt="">
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-info">

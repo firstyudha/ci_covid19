@@ -77,6 +77,13 @@ class Covid_model extends CI_Model{
           return $result;
       }
 
+      function get_faskesjabar(){
+        $response = $this->_clientpikobar->request('GET','sebaran/jabar/faskes');
+    
+            return $result = json_decode($response->getBody()->getContents(), true);
+            return $result;
+        }
+
 }
 
 ?>

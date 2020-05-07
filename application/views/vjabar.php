@@ -68,7 +68,7 @@
                                 class="badge badge-secondary">New</span></a></li>
                     <li><a href="<?= base_url('Covid/sebaran') ?>" target="_blank">Data Sebaran <span
                                 class="badge badge-danger">3-5 menit untuk load data</span> <span
-                                class="badge badge-primary">31000++ data</span></a></li>
+                                class="badge badge-primary">31800++ data</span></a></li>
                     <li><a href="<?= base_url('Covid/jabarMap') ?>" target="_blank">Jabar Map <span
                                 class="badge badge-secondary">New </span> <span
                                 class="badge badge-primary">beta</span></a></li>
@@ -309,11 +309,51 @@
             </div>
         </section><!-- End proses Section -->
 
+        <!-- ======= faskes Section ======= -->
+        <section id="faskes">
+                <div class="container">
+
+                    <div class="row mt-5">
+                        <div class="col-md-8 offset-md-2">
+                            <header class="section-header">
+                                <h3>Data Fasilitas Kesehatan Jawa Barat</h3>
+                            </header>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-10 offset-md-1">
+
+
+
+                            <table class="table table-responsive" id="tabel-data">
+                                <thead>
+                                    <tr>
+                                        <th>Nama Faskes</th>
+                                        <th>Alamat</th>
+                                        <th>No Telp</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach($faskes as $f) : ?>
+                                    <tr>
+                                        <td><?= $f['nama'] ?></td>
+                                        <td><?= $f['alamat'] ?></td>
+                                        <td><?= $f['telepon'] ?></td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End faskes Section -->
 
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer">
+    <footer id="footer" class="mt-5">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -330,7 +370,11 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-info">
-                        
+                        <div class="mt-5"></div>
+                        <br>
+                        <h3 class="mt-5">Supported by</h3>
+                        <img src="<?= base_url() ?>assets/assets/img/bem.png" width=130 class="img-fluid"
+                            alt="">
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-info">
@@ -380,11 +424,16 @@
     <script src="<?= base_url() ?>assets/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="<?= base_url() ?>assets/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="<?= base_url() ?>assets/assets/vendor/venobox/venobox.min.js"></script>
-            <script>
-                $(function () {
-  $('[data-toggle="popover"]').popover()
-})
-            </script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#tabel-data').DataTable();
+        });
+    </script>
     <!-- Template Main JS File -->
     <script src="<?= base_url() ?>assets/assets/js/main.js"></script>
 

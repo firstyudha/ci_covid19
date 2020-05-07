@@ -381,7 +381,11 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6 footer-info">
-
+                            <div class="mt-5"></div>
+                            <br>
+                            <h3 class="mt-5">Supported by</h3>
+                            <img src="<?= base_url() ?>assets/assets/img/bem.png" width=130 class="img-fluid"
+                                alt="">
                         </div>
 
                         <div class="col-lg-4 col-md-6 footer-info">
@@ -429,24 +433,24 @@
     </section>
     <!-- Vendor JS Files -->
     <script>
-    const loaderWrapper = document.querySelector('.loader-wrapper');
-    const loader = document.querySelector('.loader');
-    const content = document.getElementById('konten');
+        const loaderWrapper = document.querySelector('.loader-wrapper');
+        const loader = document.querySelector('.loader');
+        const content = document.getElementById('konten');
 
-    const loadingTime = 2000;
-    content.style.display = 'none'
-    setTimeout(() => {
-        loader.style.transform = 'scale(100)';
-    }, loadingTime);
+        const loadingTime = 2000;
+        content.style.display = 'none'
+        setTimeout(() => {
+            loader.style.transform = 'scale(100)';
+        }, loadingTime);
 
-    setTimeout(() => {
-        loaderWrapper.style.display = 'none';
-        content.style.display = 'block'
-    }, loadingTime + 150);
+        setTimeout(() => {
+            loaderWrapper.style.display = 'none';
+            content.style.display = 'block'
+        }, loadingTime + 150);
 
-    setTimeout(() => {
-        content.style.opacity = 1
-    }, loadingTime + 300);
+        setTimeout(() => {
+            content.style.opacity = 1
+        }, loadingTime + 300);
     </script>
     <script src="<?= base_url() ?>assets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="<?= base_url() ?>assets/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
