@@ -30,8 +30,8 @@
     <link href="<?= base_url() ?>assets/assets/vendor/venobox/venobox.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="<?= base_url() ?>assets/assets/css/style.css" rel="stylesheet">
-    <link href="<?= base_url() ?>assets/assets/css/loader.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/assets/css/style.min.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/assets/css/loader.min.css" rel="stylesheet">
 
     <!-- datatable -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
@@ -384,8 +384,7 @@
                             <div class="mt-5"></div>
                             <br>
                             <h3 class="mt-5">Supported by</h3>
-                            <img src="<?= base_url() ?>assets/assets/img/bem.png" width=130 class="img-fluid"
-                                alt="">
+                            <img src="<?= base_url() ?>assets/assets/img/bem.png" width=130 class="img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-4 col-md-6 footer-info">
@@ -433,24 +432,24 @@
     </section>
     <!-- Vendor JS Files -->
     <script>
-        const loaderWrapper = document.querySelector('.loader-wrapper');
-        const loader = document.querySelector('.loader');
-        const content = document.getElementById('konten');
+    const loaderWrapper = document.querySelector('.loader-wrapper');
+    const loader = document.querySelector('.loader');
+    const content = document.getElementById('konten');
 
-        const loadingTime = 2000;
-        content.style.display = 'none'
-        setTimeout(() => {
-            loader.style.transform = 'scale(100)';
-        }, loadingTime);
+    const loadingTime = 2000;
+    content.style.display = 'none'
+    setTimeout(() => {
+        loader.style.transform = 'scale(100)';
+    }, loadingTime);
 
-        setTimeout(() => {
-            loaderWrapper.style.display = 'none';
-            content.style.display = 'block'
-        }, loadingTime + 150);
+    setTimeout(() => {
+        loaderWrapper.style.display = 'none';
+        content.style.display = 'block'
+    }, loadingTime + 150);
 
-        setTimeout(() => {
-            content.style.opacity = 1
-        }, loadingTime + 300);
+    setTimeout(() => {
+        content.style.opacity = 1
+    }, loadingTime + 300);
     </script>
     <script src="<?= base_url() ?>assets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="<?= base_url() ?>assets/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -464,7 +463,7 @@
     <script src="<?= base_url() ?>assets/assets/vendor/venobox/venobox.min.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="<?= base_url() ?>assets/assets/js/main.js"></script>
+    <script src="<?= base_url() ?>assets/assets/js/main.min.js"></script>
     <script>
     $(document).ready(function() {
         $('#tabel-data').DataTable();
