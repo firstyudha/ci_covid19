@@ -339,7 +339,7 @@
 
 						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
 							<div class="member">
-								<img src="<?= base_url() ?>assets/assets/img/wowong.jpg" style="height:250px"
+								<img src="<?= base_url() ?>assets/assets/img/wowong.jpg" style="height:250px;width:200px"
 									class="img-fluid" alt="">
 								<div class="member-info">
 									<div class="member-info-content">
