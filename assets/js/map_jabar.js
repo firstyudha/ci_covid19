@@ -16,7 +16,7 @@ axios.get("https://covid19-public.digitalservice.id/api/v1/sebaran/jabar").then(
 			latitude,
 			longitude,
 			status,
-			umur
+
 		} = element;
 		let color = "";
 		switch (status) {

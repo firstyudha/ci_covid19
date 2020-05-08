@@ -192,7 +192,7 @@
     <div id="map"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
     <script src='<?= base_url('assets/js/leaflet.js') ?>'></script>
-    <script async src="<?= base_url('assets/js/map_jabar.js') ?>"></script>
+    <script async src="<?= base_url('assets/js/map_jabar.min.js') ?>"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="<?= base_url('assets/js/jquery-sidebar.js') ?>"></script>
     <script>
